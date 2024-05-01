@@ -23,16 +23,16 @@ function Header(props) {
       <AppBar
         position="fixed"
         elevation={1}
-        sx={{backgroundColor: "#00bfff", borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
+        sx={{ backgroundColor: "#00bfff", borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
       >
         <Toolbar sx={{ flexWrap: 'wrap' }}>
-          <Link 
-          fontStyle="bold"
-          variant="h5" 
-          color="inherit" 
-          noWrap sx={{ flexGrow: 1 }} 
-          href="/" 
-          style={{ textDecoration: 'none' }}>
+          <Link
+            fontStyle="bold"
+            variant="h5"
+            color="inherit"
+            noWrap sx={{ flexGrow: 1 }}
+            href="/"
+            style={{ textDecoration: 'none' }}>
             Nakazuba
           </Link>
           <nav>
@@ -63,6 +63,19 @@ function Header(props) {
             >
               ABOUT
             </Link>
+            
+            {/*20240501*/}
+            <div class="ais-InstantSearch">
+              <h1>InstantSearch.js e-commerce demo</h1>
+
+              <div class="right-panel">
+                <div id="searchbox"></div>
+                <div id="hits"></div>
+                <div id="pagination"></div>
+              </div>
+            </div>
+
+
           </nav>
         </Toolbar>
       </AppBar>
